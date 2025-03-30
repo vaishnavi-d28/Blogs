@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #147381;
+    color: #333;
+}
+
+header {
+    background-color: #161812;
+    color: rgb(25, 110, 159);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(114, 126, 89);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+.carousel-slide {
+margin: 5px;
+border-radius: 15%;
+}
+
+.carousel-slides {
+    display: flex;
+    flex: 0 0 auto;
+    width: 120%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.carousel-slides {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+
+
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-nav label {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #090c07;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-nav label:hover {
+    background-color: #0c0e0d;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 300px;  /* Set image width to 300px */
+    height: 300px; /* Set image height to 300px */
+    object-fit: cover; /* This ensures that the image is cropped correctly */
+}
+
+.destination-card h3 {
+    margin: 20px 0;
+}
+
+.destination-card p {
+    padding: 0 20px 20px;
+}
+
+/* Blog Post Section */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.blog-post {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post .content {
+    width: 60%;
+    padding: 20px;
+}
+
+.blog-post .content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.blog-post .content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.blog-post .image {
+    width: 35%;
+    padding: 20px;
+}
+
+.blog-post .image img {
+    width: 300px;  /* Set image width to 300px */
+    height: 300px; /* Set image height to 300px */
+    object-fit: cover; /* Ensure the image covers the space correctly */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f1f5f6;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #d9e2e8;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(247, 244, 244, 0.89);
+    width: 70%;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #dce6e6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #090909;
+    color: rgb(234, 231, 245);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.carousel-slides {
+    display: flex;
+    animation: scroll-logos 2s linear infinite; /* Adjust duration for speed */
+    
+    }
+    .logos-strip img {
+    margin:0 ; /* Remove any gaps between images */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    }
+    
+    @keyframes scroll-logos {
+    from {
+      transform: translateX(0); 
+      }
+    to {
+      transform: translateX(-100%); 
+    }
+    }
